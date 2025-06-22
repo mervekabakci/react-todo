@@ -1,0 +1,10 @@
+.darkMode{
+    background-color: #676767;
+    .mainBox{
+        background: var(--primary);
+
+        .todoList{
+            background-color: var(--primary);
+        }
+    }
+}

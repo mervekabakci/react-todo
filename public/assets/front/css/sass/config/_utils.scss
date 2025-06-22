@@ -1,0 +1,21 @@
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --primary:#242424;
+    --secondary:#003161;
+    --tertiary:#d61610;
+    --fourth:#946f63;
+    --fifth:#d4c7ba;
+    --light:#1daa74;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--fourth);
+    background-color: var(--fifth);
+}

@@ -1,0 +1,55 @@
+.todoList {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  background-color: var(--fifth);
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto 40px;
+  border-radius: 15px;
+  padding: 10px;
+  &::-webkit-scrollbar{
+    background-color: var(--fifth);
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: var(--fifth);
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: var(--fourth);
+    border-radius: 4px;
+  }
+
+  .todoItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    &:after {
+      content: "";
+      border-bottom: 1px solid var(--fourth);
+      position: absolute;
+      width: calc(100% - 100px);
+      bottom: 0;
+      left: 44px;
+      transition: all 0.3s linear;
+    }
+    .customCheckContain {
+      flex: 1;
+    }
+    .btnFix {
+      margin-left: auto;
+    }
+
+    &.checked {
+      &:after {
+        bottom: 46%;
+        left: 44px;
+        border-color: var(--white);
+        width: 100% 445px;
+        max-width: 72%;
+      }
+    }
+  }
+}

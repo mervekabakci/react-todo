@@ -1,0 +1,24 @@
+input[type="text"]{
+    height: 45px;
+    border: 1px solid var(--fifth);
+    background-color: var(--white);
+    width: 300px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0 12px;
+    font-weight: 500;
+    outline: 0;
+    &::placeholder{
+        color: var(--fourth);
+        font-weight: 600;
+    }
+
+    &::-moz-placeholder{
+        color: var(--fourth);
+        font-weight: 600;
+    }
+    &::-webkit-input-placeholder{
+        color: var(--fourth);
+        font-weight: 600;
+    }
+}
