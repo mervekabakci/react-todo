@@ -376,4 +376,5 @@ h1 {
 }
 .darkMode .mainBox .todoList {
   background-color: var(--primary);
+  border: 1px solid var(--fifth);
 }
