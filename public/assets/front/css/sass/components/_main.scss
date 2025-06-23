@@ -1,7 +1,7 @@
 .mainBox {
   width: 600px;
   background-color: var(--white);
-  background-image: url('../../images/statics/background.png');
+  background-image: url("../../images/statics/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
@@ -11,26 +11,46 @@
   right: 0;
   height: 70vh;
   top: 50%;
-  margin-top:-35vh;
+  margin-top: -35vh;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  @media screen and (max-width: 600px) {
+    width: 95%;
+  }
 }
-.addTodoBox{
-    display: flex;
-    align-items: center;
-    max-width: 80%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
-    gap: 20px;
+.addTodoBox {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 20px;
+  input{
+    flex: 1;
+  }
+  @media screen and (max-width: 991.98px) {
+    max-width: initial;
+    width: calc(100% - 30px);
+  }
+  .btnFix {
+    @media screen and (max-width: 991.98px) {
+      min-width: initial;
+      span {
+        &:not(.icon) {
+          display: none;
+        }
+      }
+    }
+  }
 }
-h1{
-    font-family: "Satisfy", cursive;
-    text-align: center;
-    font-size: 30px;
-    line-height: 40px;
-    margin: 0 auto;
+h1 {
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 auto;
 }

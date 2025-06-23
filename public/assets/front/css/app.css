@@ -175,6 +175,7 @@ input[type=text]::-webkit-input-placeholder {
 .btnFix .icon {
   width: 26px;
   height: 26px;
+  min-width: 26px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -297,6 +298,11 @@ input[type=text]::-webkit-input-placeholder {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 600px) {
+  .mainBox {
+    width: 95%;
+  }
+}
 
 .addTodoBox {
   display: flex;
@@ -306,6 +312,23 @@ input[type=text]::-webkit-input-placeholder {
   margin: 0 auto;
   padding: 20px 0;
   gap: 20px;
+}
+.addTodoBox input {
+  flex: 1;
+}
+@media screen and (max-width: 991.98px) {
+  .addTodoBox {
+    max-width: initial;
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .addTodoBox .btnFix {
+    min-width: initial;
+  }
+  .addTodoBox .btnFix span:not(.icon) {
+    display: none;
+  }
 }
 
 h1 {
@@ -325,6 +348,12 @@ h1 {
   margin: 0 auto 40px;
   border-radius: 15px;
   padding: 10px;
+}
+@media screen and (max-width: 991.98px) {
+  .todoList {
+    max-width: initial;
+    width: calc(100% - 30px);
+  }
 }
 .todoList::-webkit-scrollbar {
   background-color: var(--fifth);

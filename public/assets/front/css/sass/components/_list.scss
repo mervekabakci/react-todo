@@ -7,6 +7,10 @@
   margin: 0 auto 40px;
   border-radius: 15px;
   padding: 10px;
+  @media screen and (max-width:991.98px) {
+    max-width:initial;
+    width: calc(100% - 30px);
+  }
   &::-webkit-scrollbar{
     background-color: var(--fifth);
     width: 8px;
