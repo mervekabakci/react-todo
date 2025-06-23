@@ -20,6 +20,9 @@ export default class Todo extends Component{
         }
         return(
             <div className="todoList" id='todoList'>
+                {/* <p>"Harikasın! Yapılacak iş kalmamış gibi görünüyor.
+                    <br />
+                    Yeni hedefler eklemeye hazır mısın? </p> */}
                 {
                     // burada for yerıne todos larımızı map ile <li> </li> içerisinde tekte yazdırıyoruz.
                     // her todo <li></li> eklendiginde içerisine bir de delete butonu eklıyoruz

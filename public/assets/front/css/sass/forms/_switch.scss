@@ -27,16 +27,16 @@
 
     &:before {
       position: absolute;
-      content: "\e902";
+      content: "\e900";
       color: var(--white);
       font-family: "customFont" !important;
-      font-size:14px;
+      font-size:22px;
       text-align: center;
       height: 23px;
       width: 23px;
       left:5px;
       bottom: 4px;
-      background-color: var(--primary);
+      background-color: var(--fourth);
       -webkit-transition: 0.4s;
       transition: 0.4s;
       border-radius: 100%;
@@ -58,10 +58,10 @@
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
-    content: "\e900";
-    font-size: 22px;
+    content: "\e902";
+    font-size: 14px;
     color: var(--white);
-    background-color: var(--fourth);
+    background-color: var(--primary);
   }
 
   .slider.round {

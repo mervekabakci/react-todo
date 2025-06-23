@@ -25,10 +25,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem('isDark', JSON.stringify(isDark));
     if(isDark === true){
-      document.querySelector("body").classList.remove("darkMode");
+      document.querySelector("body").classList.add("darkMode");
     }
     else{
-      document.querySelector("body").classList.add("darkMode");
+      document.querySelector("body").classList.remove("darkMode");
     }
     console.log("isDark:" + isDark);
   }, [isDark]);
